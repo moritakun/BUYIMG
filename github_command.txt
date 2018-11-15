@@ -1,3 +1,14 @@
+✩流れ✩
+①リモートリポジトリをクローンしてローカルリポジトリを作る
+git clone https://github.com/moritakun/BUYIMG.git;
+
+②変更した、追加した内容をまずはローカルリポジトリにコミットする
+git add (ファイル名);	//ファイルの追加
+git commit -a -m "任意のコメント";	//コミット
+
+③リモートリポジトリにプッシュする
+git push origin (ブランチ名);
+
 【ブランチ】
 ・ブランチを作る
 git branch (ブランチ名);
