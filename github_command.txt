@@ -1,0 +1,7 @@
+【ブランチ】
+・ブランチを作る
+git branch (ブランチ名);
+git push push origin (ブランチ名);		//ブランチをpushする
+
+・ブランチを削除する
+git push --delete origin (ブランチ名);	//リモートから削除！
