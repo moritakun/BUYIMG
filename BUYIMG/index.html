@@ -1,0 +1,71 @@
+<!--
+	【フロント】
+	・centerimgの画像切り替えアニメーション
+	・カテゴリ部分のアニメーション、リンク範囲修正
+	・検索バー修正
+	【バック】
+	・検索フォームに入力した内容を受け取る変数(id)を訂正
+	・カテゴリアイコンのリンク先
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-style-type" content="text/css"/>
+
+		<title>TOP|BUYIMG</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+		<link href="./css/index_style.css" rel="stylesheet" type="text/css" />
+	
+	</head>
+	<body>
+		<!-- header -->
+			<div class="header">
+				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<div class="header_buttons">
+					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="./cart.html"><img src="./img/common/header_button2.png" class="header_button2"></a>
+				</div>
+			</div>	
+
+		<!-- /header -->
+			<div class="serch_block">
+				<form id="form02" action="./review.html">
+				</form>
+				 <input id="input02" type="text" placeholder="serch">
+				 <input id="submit02" type="submit" value="">
+			</div>
+
+			<div class="center">	
+			</div>
+
+
+		<!-- category -->
+				<div class="category">
+					<h2 class="category_title">category</h2>
+					<hr class="category_line">
+
+					<div class="category_icon">
+						<div class="category_1">
+							<a href="./preview.html"><img src="./img/index/business.png" id="icon_left"></a>				
+							<a href="./preview.html"><img src="./img/index/event.png"></a>				
+						</div>
+						<div class="category_2">
+							<a href="./preview.html"><img src="./img/index/person.png" id="icon_left"></a>
+							<a href="./preview.html"><img src="./img/index/nature.png" id="icon_left"></a>						
+							<a href="./preview.html"><img src="./img/index/life.png"></a>
+						</div>
+					</div>
+				</div>
+
+
+		<!-- footer -->
+         <div id="footer-fixed">
+            <div id="footer-content">
+                  Copyright © RAIN. All Rights Reserved.
+            </div>
+         </div>
+		<!-- /footer -->
+	</body>
+</html>
