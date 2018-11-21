@@ -4,8 +4,8 @@
 リモートリポジトリをクローンしてローカルリポジトリを作る
 git clone https://github.com/moritakun/BUYIMG.git;
 
-↓2回目以降(PCの中にローカルリポジトリgaaru)
-
+↓2回目以降(PCの中にローカルリポジトリがある)
+git pull origin (ブランチ名);
 
 
 
@@ -24,3 +24,6 @@ git push push origin (ブランチ名);		//ブランチをpushする
 
 ・ブランチを削除する
 git push --delete origin (ブランチ名);	//リモートから削除！
+
+・ブランチの変更
+git checkout (ブランチ名);
