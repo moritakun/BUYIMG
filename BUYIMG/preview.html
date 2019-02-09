@@ -10,16 +10,26 @@
 		<link href="./css/preview.css" rel="stylesheet" type="text/css" />
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/masonry.pkgd.min.js"></script>
-		<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+		<!--
+		<script src="js/jquery.matchHeight.js"></script>
+		-->
 		<script>
 			$(window).load(function() {
 		    	$('.grid').masonry({
 			   	 });
 			});
+		/*
 			$(function() {
    			 	$('.item').matchHeight();
  		 	});
+ 		 */
+ 		 	var $grid = jQuery('.grid').imagesLoaded(function(){
+ 				 $grid.masonry({
+    			itemSelector: '.grid-item'
+ 			 	});
+			});
 		</script>
 	</head>
 	<body>
@@ -37,21 +47,19 @@
 		<a href="">▼新着順</a>
 		<!-- /header -->
 		<div class="grid">
-			<div class="grid-item item-1" class="item"><span>w200×h200</span></div>
-			<div class="grid-item item-2" class="item"><span>w200×h300</span></div>
-			<div class="grid-item item-3" class="item"><span>w200×h400</span></div>
-			<div class="grid-item item-1" class="item"><span>w200×h200</span></div>
-			<div class="grid-item item-2" class="item"><span>w200×h300</span></div>
-			<div class="grid-item item-3" class="item"><span>w200×h400</span></div>
-			<div class="grid-item item-1" class="item"><span>w200×h200</span></div>
-			<div class="grid-item item-2" class="item"><span>w200×h300</span></div>
-			<div class="grid-item item-3" class="item"><span>w200×h400</span></div>
-			<div class="grid-item item-1" class="item"><span>w200×h200</span></div>
-			<div class="grid-item item-2" class="item"><span>w200×h300</span></div>
-			<div class="grid-item item-3" class="item"><span>w200×h400</span></div>
-			<div class="grid-item item-1" class="item"><span>w200×h200</span></div>
-			<div class="grid-item item-2" class="item"><span>w200×h300</span></div>
-			<div class="grid-item item-3" class="item"><span>w200×h400</span></div>
+			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
+			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
+			<div class="grid-item item-3" class="item"><span><img src="img/preview/4.jpg"></span></div>
+			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
+			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
+			<div class="grid-item item-3" class="item"><span><img src="img/preview/4.jpg"></span></div>
+			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
+			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
+			<div class="grid-item item-3" class="item"><span><img src="img/preview/4.jpg"></span></div>
+			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
+			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
+			<div class="grid-item item-3" class="item"><span><img src="img/preview/4.jpg"></span></div>
+
 		</div>
 		<!-- footer -->
          <div id="footer">

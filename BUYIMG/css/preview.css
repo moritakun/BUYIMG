@@ -59,8 +59,9 @@ h3{
 	width:1400px;
 }
 .grid-item{
-	width: 200px;
-	background: #efefef;
+	/* デバッグ
+	background: #efefef;*/
+	width:200px;
 	float: left;
 	margin: 10px;
  	display: table;
@@ -68,19 +69,20 @@ h3{
 .grid-item span{
  	display: table-cell;
 	vertical-align: middle;
-	text-align: center;
  	color: #737373;
 }
+/*
 .item-1{
 	height: 200px;
 }
+
 .item-2{
 	height: 300px;
 }
 .item-3{
 	height: 400px;
 }
-
+*/
 /* footer */
 #footer
 {
