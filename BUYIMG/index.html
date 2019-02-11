@@ -1,11 +1,7 @@
 <!--
-	【フロント】
-	・centerimgの画像切り替えアニメーション
-	・カテゴリ部分のアニメーション、リンク範囲修正
-	・検索バー修正
-	【バック】
-	・検索フォームに入力した内容を受け取る変数(id)を訂正
-	・カテゴリアイコンのリンク先
+	・必要に応じて大カテゴリアイコン部分「value」の値を直しておいてください。
+	・大カテゴリアイコンアニメーション未着手
+	フロント作成者：石井
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
@@ -14,7 +10,7 @@
 		<title>TOP|BUYIMG</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
-		<link href="./css/index_style.css" rel="stylesheet" type="text/css" />
+		<link href="./css/index.css" rel="stylesheet" type="text/css" />
 	
 	</head>
 	<body>
@@ -28,14 +24,14 @@
 			</div>	
 
 		<!-- /header -->
-			<div class="serch_block">
-				<form id="form02" action="./review.html">
-				</form>
-				 <input id="input02" type="text" placeholder="serch">
-				 <input id="submit02" type="submit" value="">
-			</div>
 
+		<!-- 画面中央橋の画像 -->
 			<div class="center">	
+				<!-- 検索バー -->
+				<form method="post" action="./preview.php" class="search_container">
+					<input type="text" size="25" placeholder="キーワード検索" name="seaech_word">
+	  				<input type="submit" value="">
+				</form>
 			</div>
 
 
@@ -45,14 +41,29 @@
 					<hr class="category_line">
 
 					<div class="category_icon">
-						<div class="category_1">
-							<a href="./preview.html"><img src="./img/index/business.png" id="icon_left"></a>				
-							<a href="./preview.html"><img src="./img/index/event.png"></a>				
+						<div class="category_top">
+									<form method="post" action="./preview.php" class="icon i-top1">
+										<input type="hidden" name="big_category" value="ビジネス">
+										<input type="image" src="./img/index/business.jpg" alt="ビジネス">
+									</form>
+									<form method="post" action="./preview.php" class="icon i-top2">
+										<input type="hidden" name="big_category" value="イベント">
+										<input type="image" src="./img/index/event.jpg" alt="イベント">
+									</form>
 						</div>
-						<div class="category_2">
-							<a href="./preview.html"><img src="./img/index/person.png" id="icon_left"></a>
-							<a href="./preview.html"><img src="./img/index/nature.png" id="icon_left"></a>						
-							<a href="./preview.html"><img src="./img/index/life.png"></a>
+						<div class="category_bottom">
+									<form method="post" action="./preview.php" class="icon i-bottom1">
+										<input type="hidden" name="big_category" value="人物">
+										<input type="image" src="./img/index/people.jpg" alt="人物">
+									</form>
+									<form method="post" action="./preview.php" class="icon i-bottom2">
+										<input type="hidden" name="big_category" value="自然">
+										<input type="image" src="./img/index/nature.jpg" alt="自然">
+									</form>
+									<form method="post" action="./preview.php" class="icon i-bottom3">
+										<input type="hidden" name="big_category" value="生活">
+										<input type="image" src="./img/index/life.jpg" alt="生活">
+									</form>
 						</div>
 					</div>
 				</div>
