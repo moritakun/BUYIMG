@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	height:100%;
+	width:100%;
+	font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
+}
+
+/* header */
+.header{
+	background-color:#414348;
+	width:100%;
+	position:fixed;
+	top: 0;
+	z-index: 9999;
+}
+.header_logo{
+	margin-left:100px;
+	padding:5px 0px;
+	float:left;
+}
+.header_buttons{
+	text-align:right;
+	padding-right:80px;
+	padding-top:5px;
+}
+/* mypage button */
+.header_button1{
+	border-radius: 50%;
+    border: 2px solid white;
+}
+.header_button1:hover{
+	border-radius: 50%;
+    border: 2px solid #a2d8e4;
+}
+/* cart button */
+.header_button2{
+	margin-left:5px;
+	border-radius: 50%;
+    border: 2px solid white;
+}
+.header_button2:hover{
+	margin-left:5px;
+	border-radius: 50%;
+    border: 2px solid #a2d8e4;
+}
+/* hedder ここまで */
+
+
+/* 中央写真 */
+.center{
+	width:1280px;
+	height:320px;
+	margin-top:100px;
+	margin-left:auto;
+	margin-right: auto;
+	background-image:url("../img/common/center_1.jpg");
+	position:relative;
+	padding-top:80px;
+}
+
+
+
+/*検索フォーム*/
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 400px;
+  overflow: hidden;
+  background-color:white;
+  margin:200px auto 0px auto;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  width:350px;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  /* 虫眼鏡の画像 */
+  background-image:url(../img/common/search.png);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  color: #3879D9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
+  outline : none;
+}
+
+/* category */
+.category{
+	width:1280px;
+	margin-left:80px;
+	/* デバッグ
+	background-color:pink; */
+}
+.category_title{
+	text-align:center;
+	font-family: 'Charmonman', cursive;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+/* category_icons */
+.category_icon{
+/*	background-color:pink; */
+	text-align:center;
+}
+
+.category_top{
+	margin:100px auto 0;
+	/*background-color:pink;*/
+	text-align:center;
+}
+.category_bottom{
+	/*background-color:blue;*/
+	margin-bottom:100px;
+}
+
+.icon{
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  background-color:pink;
+  /*margin: 0 auto;*/
+}
+/* hover */
+.icon .text {
+	font-size:		150%;
+	color:			#fff;
+	padding-top:		130px;
+	padding-left:		170px;
+}
+.icon .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			-100%;
+	left:			0;
+
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.6s ease;
+	transition:		all 0.6s ease;
+}
+.icon:hover .mask {
+	top:			0;
+}
+/* アイコン個々のcss */
+.i-top1{
+	float:left;
+	margin:0 150px 0 360px;
+	background-image:url("../img/index/business.jpg");
+}
+.i-top2{
+	background-image:url("../img/index/person.jpg");
+}
+.i-bottom1{
+	background-image:url("../img/index/event.jpg");
+	float:left;
+	margin:0 150px 0 180px;
+
+}
+.i-bottom2{
+	background-image:url("../img/index/nature.jpg");
+	float:left;
+	margin-right:150px;
+
+}
+.i-bottom3{
+	background-image:url("../img/index/life.jpg");
+}
+
+/* footer */
+
+#footer
+{
+	margin-top:50px;
+	background-color:#414348;   
+	text-align: center;
+	color:#fff; 
+	padding:10px 0 20px;      
+	height:60px;             
+	width:100%;               
+}
+/* footer ここまで */

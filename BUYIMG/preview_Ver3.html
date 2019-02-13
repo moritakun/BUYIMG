@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<title>TOP|BUYIMG</title>
+
+		<link href="css/preview_Ver3.css" rel="stylesheet" type="text/css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+		<script>
+/*
+		var container = document.querySelector('.grid');
+		imagesLoaded(container, function () {
+		  var msnry = new Masonry(container, {
+		    columnWidth: 200,
+		    itemSelector: '.grid-item'
+		  });
+		});
+*/
+	     //js-masonryの設定
+	     jQuery.event.add(window, "load", function(){ 
+	         jQuery('.grid').masonry({ //親要素指定
+	             columnWidth: '.grid-item', //基本となるコンテンツ幅を指定。今回ははcssのクラスセレクタを記述。
+	             itemSelector: '.grid-item', //タイル状に配置するコンテンツを指定
+	             percentPosition: true, //タイル状に配置するコンテンツ幅をパーセントで指定する
+	             isAnimated: true //ブラウザの幅に合わせてコンテンツが移動する際にアニメーションが実行されるよう指定
+	         });
+	     });
+		</script>
+	</head>
+	<body>
+		<!-- header -->
+			<div class="header">
+				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<div class="header_buttons">
+					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="./cart.html"><img src="./img/common/header_button2.png" class="header_button2"></a>
+				</div>
+			</div>	
+
+		<h3>xxxの写真素材　xx件</h3>
+		<hr>
+		<a href="">▼新着順</a>
+		<!-- /header -->
+
+
+		<div class="grid">
+			<div class="grid-item"><img src="img/preview/1.jpg"></div>
+			<div class="grid-item"><img src="img/preview/2.jpg"></div>
+			<div class="grid-item"><img src="img/preview/4.jpg"></div>
+			<div class="grid-item"><img src="img/preview/1.jpg"></div>
+			<div class="grid-item"><img src="img/preview/2.jpg"></div>
+			<div class="grid-item"><img src="img/preview/4.jpg"></div>
+			<div class="grid-item"><img src="img/preview/1.jpg"></div>
+			<div class="grid-item"><img src="img/preview/2.jpg"></div>
+			<div class="grid-item"><img src="img/preview/4.jpg"></div>
+			<div class="grid-item"><img src="img/preview/1.jpg"></div>
+			<div class="grid-item"><img src="img/preview/2.jpg"></div>
+			<div class="grid-item"><img src="img/preview/4.jpg"></div>
+
+		</div>
+
+
+		<!-- footer -->
+         <div id="footer">
+                  Copyright © RAIN. All Rights Reserved.
+         </div>
+		<!-- /footer -->
+	</body>
+</html>
