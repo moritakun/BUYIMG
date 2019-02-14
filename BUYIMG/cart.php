@@ -32,7 +32,7 @@
 						<td>
 							<img src ="./images/event.jpg" alt="ワイン"/>
 						</td>
-						<td class="td">
+						<td>
 							<label>画像名:</label>ワイン<br/>
 							<label>単価:<label>10円
 						</td>
