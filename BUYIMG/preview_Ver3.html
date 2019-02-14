@@ -7,29 +7,38 @@
 
 		<link href="css/preview_Ver3.css" rel="stylesheet" type="text/css" />
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script> 
+		<script src="js/imagesloaded.pkgd.min.js"></script> <!-- ファイルの読み込み -->
+<script>
+jQuery(function($){
+  $(window).load(function(){
+    var $container = $('#container');　
+    $container.imagesLoaded(function(){
+      $container.masonry({
+        itemSelector: '.work_item',　
+        isFitWidth: true,　
+        columnWidth: 180
+      });
+    });
+  });
+});
+</script>
+
+<!--
 		<script>
-/*
-		var container = document.querySelector('.grid');
-		imagesLoaded(container, function () {
-		  var msnry = new Masonry(container, {
-		    columnWidth: 200,
-		    itemSelector: '.grid-item'
-		  });
+		jQuery(function($){
+		  var $container = $('#container');　
+		    $container.imagesLoaded(function(){
+		      $container.masonry({
+		        itemSelector: '.item',　
+		        isFitWidth: true,　
+		        columnWidth: 180
+		      });
+		    });
 		});
-*/
-	     //js-masonryの設定
-	     jQuery.event.add(window, "load", function(){ 
-	         jQuery('.grid').masonry({ //親要素指定
-	             columnWidth: '.grid-item', //基本となるコンテンツ幅を指定。今回ははcssのクラスセレクタを記述。
-	             itemSelector: '.grid-item', //タイル状に配置するコンテンツを指定
-	             percentPosition: true, //タイル状に配置するコンテンツ幅をパーセントで指定する
-	             isAnimated: true //ブラウザの幅に合わせてコンテンツが移動する際にアニメーションが実行されるよう指定
-	         });
-	     });
 		</script>
+-->
 	</head>
 	<body>
 		<!-- header -->
@@ -47,20 +56,21 @@
 		<!-- /header -->
 
 
-		<div class="grid">
-			<div class="grid-item"><img src="img/preview/1.jpg"></div>
-			<div class="grid-item"><img src="img/preview/2.jpg"></div>
-			<div class="grid-item"><img src="img/preview/4.jpg"></div>
-			<div class="grid-item"><img src="img/preview/1.jpg"></div>
-			<div class="grid-item"><img src="img/preview/2.jpg"></div>
-			<div class="grid-item"><img src="img/preview/4.jpg"></div>
-			<div class="grid-item"><img src="img/preview/1.jpg"></div>
-			<div class="grid-item"><img src="img/preview/2.jpg"></div>
-			<div class="grid-item"><img src="img/preview/4.jpg"></div>
-			<div class="grid-item"><img src="img/preview/1.jpg"></div>
-			<div class="grid-item"><img src="img/preview/2.jpg"></div>
-			<div class="grid-item"><img src="img/preview/4.jpg"></div>
-
+		<div id="item-wrap">
+			<div id="container">	
+				<div class="item"><img src="img/preview/1.jpg"></div>
+				<div class="item"><img src="img/preview/2.jpg"></div>
+				<div class="item"><img src="img/preview/4.jpg"></div>
+				<div class="item"><img src="img/preview/1.jpg"></div>
+				<div class="item"><img src="img/preview/2.jpg"></div>
+				<div class="item"><img src="img/preview/4.jpg"></div>
+				<div class="item"><img src="img/preview/1.jpg"></div>
+				<div class="item"><img src="img/preview/2.jpg"></div>
+				<div class="item"><img src="img/preview/4.jpg"></div>
+				<div class="item"><img src="img/preview/1.jpg"></div>
+				<div class="item"><img src="img/preview/2.jpg"></div>
+				<div class="item"><img src="img/preview/4.jpg"></div>
+			</div>
 		</div>
 
 
