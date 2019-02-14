@@ -39,7 +39,6 @@ session_start();
 			?>
 			小計(<?php print $cnt; ?>点)：<?php print $sum; ?>円<br><br>
 
-			<a href="preview_detail.php">戻る</a>
 			<a href="index.html">INDEX</a>
 			<a href="cash.html">決済</a>
 		<?php

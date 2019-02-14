@@ -39,7 +39,18 @@ session_start();
 
     <form method="post" action="./add_cart.php">
 			<input type="hidden" name="product_id" value="<?php print $_POST["product_id"]; ?>">
-      <input type="submit" value="カートに入れる"><br>
+      <input type="submit" value=<?php if(isset($_SESSION["cart"][$row['product_id']]))
+      {
+        print "カートにあります";
+      }else{
+         print"カートに入れる";
+       }
+        ?>
+        <?php if(isset($_SESSION["cart"][$row['product_id']])){
+          print"style=pointer-events:none;";
+        }
+        ?>
+        ><br>
 		</form>
 
     <a href="index.html">INDEX</a>
