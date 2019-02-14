@@ -9,7 +9,7 @@
 		<link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
-		<link href="./css/テンプレート.css" rel="stylesheet" type="text/css" />
+		<link href="./css/テンプレート(検索フォーム無).css" rel="stylesheet" type="text/css" />
 	
 	</head>
 	<body>
@@ -82,10 +82,9 @@
 		<!--main end-->
 
 		<!-- footer -->
-        <div id="footer-fixed">
-            <div id="footer-content">
-                  Copyright © RAIN. All Rights Reserved.
-            </div>
+        	<div id="footer">
+				Copyright © RAIN. All Rights Reserved.
+			</div>
 	     </div>
 		<!-- /footer -->
 	</body>
