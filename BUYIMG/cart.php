@@ -10,7 +10,7 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 		<link href="./css/テンプレート(検索フォーム無).css" rel="stylesheet" type="text/css" />
-	
+
 	</head>
 	<body>
 		<!-- header -->
@@ -20,65 +20,71 @@
 					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.html"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
-			</div>	
+			</div>
 		<!-- /header -->
 		<br/><br/><br/>
-		<h1>カート</h1>
+		<h2>カート</h2>
 		<hr/>
 		<!--main start-->
-			<div class="container">
-				<table class="table table-responsive-md table-hover table-striped td">
+			<div class="container pt-0 pb-1 pl-2 pr-3">
+				<table class="table table-responsive-md table-hover table-striped">
 					<tr>
 						<td>
 							<img src ="./images/event.jpg" alt="ワイン"/>
 						</td>
-						<td style="vertical-align: middle">
+						<td class="td">
 							<label>画像名:</label>ワイン<br/>
 							<label>単価:<label>10円
 						</td>
-						<td style="vertical-align: middle">
-							<button class="btn btn-secondary btn-lg btn-block">削除</button>
+						<td>
+							<button type="button" name="delete" class="btn btn-secondary btn-lg btn-block">削除</button>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<img src ="./images/human_2.jpg" alt="カメラマン"/>
 						</td>
-						<td style="vertical-align: middle">
+						<td>
 							<label>画像名:</label>カメラマン<br/>
 							<label>単価:<label>10円
 						</td>
-						<td style="vertical-align: middle">
-							<button class="btn btn-secondary btn-lg btn-block">削除</button>
+						<td>
+							<button type="button" name="delete" class="btn btn-secondary btn-lg btn-block">削除</button>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<img src ="./images/life.jpg" alt="coffee"/>
 						</td>
-						<td style="vertical-align: middle">
+						<td>
 							<label>画像名:</label>coffee<br/>
 							<label>単価:<label>10円
 						</td>
-						<td style="vertical-align: middle">
-								<button class="btn btn-secondary btn-lg btn-block">削除</button>
+						<td>
+								<button type="button" name="delete" class="btn btn-secondary btn-lg btn-block">削除</button>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<img src ="./images/nature.jpg" alt="自然"/>
 						</td>
-						<td style="vertical-align: middle">
+						<td>
 							<label>画像名:</label>自然<br/>
 							<label>単価:<label>10円
 						</td>
-						<td style="vertical-align: middle">
-								<button class="btn btn-secondary btn-lg btn-block">削除</button>
+						<td>
+								<button type="button" name="delete"  class="btn btn-secondary btn-lg btn-block">削除</button>
 						</td>
 					</tr>
 				</table>
+				<div class="table table-responsive-md table-hover table-striped text-right">
+					<form method="post" action="#">
+						<label><strong>合計：<span>40</span>円<strong></label>　<button type="button" name="cash" class="btn btn-secondary btn-lg">決済</button>
+					</form>
+				</div>
 			</div>
 
+			<br/>	<br/><br/><br/>
 		<!--main end-->
 
 		<!-- footer -->
@@ -89,4 +95,3 @@
 		<!-- /footer -->
 	</body>
 </html>
-
