@@ -10,7 +10,7 @@ session_start();
 	<body>
     <?php
     //print_r($_SESSION["cart"]);
-		if($_SESSION["cart"] != NULL)
+		if(isset($_SESSION["cart"]))
 		{
 			$con=mysqli_connect("localhost","root","")or die("失敗");
 			mysqli_set_charset($con,"utf8");
