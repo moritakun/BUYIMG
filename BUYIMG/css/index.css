@@ -32,6 +32,7 @@ body {
 .header_button1{
 	border-radius: 50%;
     border: 2px solid white;
+   vertical-align: middle;
 }
 .header_button1:hover{
 	border-radius: 50%;
@@ -42,6 +43,7 @@ body {
 	margin-left:5px;
 	border-radius: 50%;
     border: 2px solid white;
+    vertical-align: middle;
 }
 .header_button2:hover{
 	margin-left:5px;
