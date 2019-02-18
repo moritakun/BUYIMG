@@ -1,53 +1,53 @@
 @charset "utf-8";
 
 * {
-	margin:0;
-	padding:0;
+  margin:0;
+  padding:0;
 }
 body {
-	height:100%;
-	width:100%;
-	font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
+  height:100%;
+  width:100%;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
 }
 
 /* header */
 .header{
-	background-color:#414348;
-	width:100%;
-	position: fixed;
-	top: 0;
-	z-index: 9999;
+  background-color:#414348;
+  width:100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
 }
 .header_logo{
-	margin-left:100px;
-	padding:5px 0px;
-	float:left;
+  margin-left:100px;
+  padding:5px 0px;
+  float:left;
 }
 .header_buttons{
-	text-align:right;
-	padding-right:80px;
-	padding-top:5px;
+  text-align:right;
+  padding-right:80px;
+  padding-top:5px;
 }
 /* mypage button */
 .header_button1{
-	border-radius: 50%;
+  border-radius: 50%;
     border: 2px solid white;
    vertical-align: middle;
 }
 .header_button1:hover{
-	border-radius: 50%;
+  border-radius: 50%;
     border: 2px solid #a2d8e4;
 }
 /* cart button */
 .header_button2{
-	margin-left:5px;
-	border-radius: 50%;
+  margin-left:5px;
+  border-radius: 50%;
     border: 2px solid white;
     vertical-align: middle;
 }
 .header_button2:hover{
-	margin-left:5px;
-	border-radius: 50%;
+  margin-left:5px;
+  border-radius: 50%;
     border: 2px solid #a2d8e4;
 }
 /* hedder ここまで */
@@ -55,14 +55,14 @@ body {
 
 /* 中央写真 */
 .center{
-	width:1280px;
-	height:320px;
-	margin-top:100px;
-	margin-left:auto;
-	margin-right: auto;
-	background-image:url("../img/common/center_1.jpg");
-	position:relative;
-	padding-top:80px;
+  width:1280px;
+  height:320px;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  background-image:url("../img/common/center_1.jpg");
+  position:relative;
+  padding-top:80px;
 }
 
 
@@ -108,98 +108,83 @@ body {
 
 /* category */
 .category{
-	width:1280px;
-	margin-left:80px;
-	/* デバッグ
-	background-color:pink; */
+  width:1280px;
+  margin-left:80px;
+  /* デバッグ
+  background-color:pink; */
 }
 .category_title{
-	text-align:center;
-	font-family: 'Charmonman', cursive;
-	margin-top:30px;
-	margin-bottom:30px;
+  text-align:center;
+  font-family: 'Charmonman', cursive;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 
-/* category_icons */
-.category_icon{
-/*	background-color:pink; */
-	text-align:center;
+/* サムネイル */
+/* サムネイル基本設定 */
+.icon {
+  width:      320px;
+  height:     210px;
+  overflow:   hidden;
+  position:   relative;
 }
-
-.category_top{
-	margin:100px auto 0;
-	/*background-color:pink;*/
-	text-align:center;
-}
-.category_bottom{
-	/*background-color:blue;*/
-	margin-bottom:100px;
-}
-
-.icon{
-  width: 200px;
-  height: 200px;
-  transform: rotate(45deg);
-  overflow: hidden;
-  background-color:pink;
-  /*margin: 0 auto;*/
-}
-/* hover */
-.icon .text {
-	font-size:		150%;
-	color:			#fff;
-	padding-top:		130px;
-	padding-left:		170px;
+.icon .caption {
+  font-size:    130%;
+  color:      #fff;
+  text-align:     center;
+  padding-top:    80px;
 }
 .icon .mask {
-	width:			100%;
-	height:			100%;
-	position:		absolute;
-	top:			-100%;
-	left:			0;
-
-	background-color:	rgba(0,0,0,0.4);
-	-webkit-transition:	all 0.6s ease;
-	transition:		all 0.6s ease;
+  width:      100%;
+  height:     100%;
+  position:   absolute;
+  top:      0;
+  left:     0;
+  opacity:    0;  /* 表示させない */
+  background-color: rgba(0,0,0,0.4);
+  -webkit-transform:  rotateY(-180deg);
+  transform:    rotateY(-180deg);
+  -webkit-transition: all 0.6s ease;
+  transition:   all 0.6s ease;
 }
 .icon:hover .mask {
-	top:			0;
+  -webkit-transform:  rotateY(0deg);
+  transform:    rotateY(0deg);
+  opacity:    1;  /* ホバーで表示する */
 }
-/* アイコン個々のcss */
+/* サムネイル上段下段 */
+.category_top{
+  width:670px;
+  margin:50px auto 0 auto;
+/*  margin:50px 0 0 200px; */
+}
+.category_bottom{
+  width:1020px;
+  margin:30px auto 80px auto;
+}
+/* サムネイル個々設定 */
 .i-top1{
-	float:left;
-	margin:0 150px 0 360px;
-	background-image:url("../img/index/business.jpg");
-}
-.i-top2{
-	background-image:url("../img/index/person.jpg");
+  float:left;
+  margin-right:30px;
 }
 .i-bottom1{
-	background-image:url("../img/index/event.jpg");
-	float:left;
-	margin:0 150px 0 180px;
-
+  float:left;
+  margin-right:30px;
 }
 .i-bottom2{
-	background-image:url("../img/index/nature.jpg");
-	float:left;
-	margin-right:150px;
-
+  float:left;
+  margin-right:30px;
 }
-.i-bottom3{
-	background-image:url("../img/index/life.jpg");
-}
-
 /* footer */
 
 #footer
 {
-	margin-top:50px;
-	background-color:#414348;   
-	text-align: center;
-	color:#fff; 
-	padding:10px 0 20px;      
-	height:60px;             
-	width:100%;               
+  margin-top:50px;
+  background-color:#414348;   
+  text-align: center;
+  color:#fff; 
+  padding:10px 0 20px;      
+  height:60px;             
+  width:100%;               
 }
 /* footer ここまで */

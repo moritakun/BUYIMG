@@ -9,7 +9,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="content-style-type" content="text/css"/>
 
-		<title>TOP|BUYIMG</title>
+		<title>素材一覧|BUYIMG</title>
 
 		<link href="./css/preview.css" rel="stylesheet" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

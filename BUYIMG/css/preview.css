@@ -119,22 +119,11 @@ h3{
 	vertical-align: middle;
  	color: #737373;
 }
-/*
-.item-1{
-	height: 200px;
-}
 
-.item-2{
-	height: 300px;
-}
-.item-3{
-	height: 400px;
-}
-*/
 /* footer */
 #footer
 {
-	margin-top:300px;	/* 各自変更すること */
+	margin-top:100px;	/* 各自変更すること */
 	background-color:#414348;   
 	text-align: center;
 	color:#fff; 
