@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2019-02-13 06:00:03
+-- Generation Time: 2019-02-20 08:20:37
 -- 服务器版本： 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -61,7 +61,10 @@ INSERT INTO `product_master` (`product_id`, `product_name`, `product_introductio
 (17, '安い車', '安い車', './picture/car1.jpg', 300, '479*470', 'JPG', '2019-02-07 14:52:44', '車', '小島'),
 (18, '高い車', '高い車', './picture/car2.jpg', 300, '479*470', 'JPG', '2019-02-07 14:52:44', '車', '小島'),
 (19, 'イラスト車', 'イラスト車', './picture/car3.jpg', 300, '479*470', 'JPG', '2019-02-07 14:52:44', '車', '小島'),
-(20, 'おもちゃ車', 'おもちゃ車', './picture/car4.jpg', 300, '479*470', 'JPG', '2019-02-07 14:52:44', '車', '小島');
+(20, 'おもちゃ車', 'おもちゃ車', './picture/car4.jpg', 300, '479*470', 'JPG', '2019-02-07 14:52:44', '車', '小島'),
+(21, 'good', 'good', './picture/people5.jpg', 400, '479*470', 'JPG', '2019-02-20 16:10:41', '人', '小林'),
+(22, 'jk', 'jk', './picture/people6.jpg', 400, '479*470', 'JPG', '2019-02-20 16:10:41', '人', '小林'),
+(23, 'オカマ', 'オカマ', './picture/people7.jpg', 400, '479*470', 'JPG', '2019-02-20 16:10:41', '人', '小林');
 
 --
 -- Indexes for dumped tables
@@ -81,7 +84,7 @@ ALTER TABLE `product_master`
 -- 使用表AUTO_INCREMENT `product_master`
 --
 ALTER TABLE `product_master`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '素材ID', AUTO_INCREMENT=21;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '素材ID', AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

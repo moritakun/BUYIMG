@@ -24,7 +24,10 @@ session_start();
   $sql2=" select * from product_master where big_category='{$row["big_category"]}'";
   $result2=mysqli_query($con,$sql2);
   $list2 = array();
-  $row2 = mysqli_fetch_assoc($result2);
+  while ($row2 = mysqli_fetch_assoc($result2)) {
+    $list2[] = $row2;
+  }
+
 
 ?>
 <!DOCTYPE html>
@@ -58,23 +61,25 @@ session_start();
         ><br>
 		</form>
 
-    <?php for($cnt=0;$cnt<4;$cnt++) {?>
+    <?php
+    $cnt=0;
+    foreach ($list2 as $row2) {
+        if($cnt>3)
+        {
+          break;
+        }
+        if($row2['product_id']==$row['product_id'])
+        {
+          continue;
+        }
+      ?>
       <form method="post" action="./preview_detail.php">
         <input type="hidden" name="product_id" value="<?php echo $row2["product_id"];?>">
-<!--
-        <input type="hidden" name="product_name" value="<?php // print $row["product_name"]; ?>">
-        <input type="hidden" name="product_introduction" value="<?php // print $row["product_introduction"]; ?>">
-        <input type="hidden" name="product_path" value="<?php // print $row["product_path"]; ?>">
-        <input type="hidden" name="price" value="<?php // print $row["price"]; ?>">
-        <input type="hidden" name="size" value="<?php // print $row["size"]; ?>">
-        <input type="hidden" name="type" value="<?php // print $row["type"]; ?>">
-        <input type="hidden" name="upload_data" value="<?php // print $row["upload_data"]; ?>">
-        <input type="hidden" name="big_category" value="<?php // print $row["big_category"]; ?>">
-        <input type="hidden" name="author_name" value="<?php // print $row["author_name"]; ?>">
--->
         <input type="image" src="<?php print $row2["product_path"]; ?>" alt="商品" width=200px height="200px">
       </form>
-      <?php } ?>
+      <?php
+      $cnt++;
+    } ?>
 
 
     <a href="index.html">INDEX</a>
