@@ -155,9 +155,10 @@ body {
 /* サムネイル上段下段 */
 .category_top{
   width:670px;
+  height:210px;
   margin:50px auto 0 auto;
-/*  margin:50px 0 0 200px; */
 }
+
 .category_bottom{
   width:1020px;
   margin:30px auto 80px auto;
@@ -166,20 +167,31 @@ body {
 .i-top1{
   float:left;
   margin-right:30px;
+  background-image:url("../img/index/business.jpg");
 }
-.i-bottom1{
+.i-top2{
+  float:left;
+  background-image:url("../img/index/event.jpg");
+}
+.i-buttom1{
   float:left;
   margin-right:30px;
+  background-image:url("../img/index/person.jpg");
 }
-.i-bottom2{
+.i-buttom2{
   float:left;
   margin-right:30px;
+  background-image:url("../img/index/nature.jpg");
+}
+.i-buttom3{
+  float:left;
+  background-image:url("../img/index/life.jpg");
 }
 /* footer */
 
 #footer
 {
-  margin-top:50px;
+  margin-top:350px;
   background-color:#414348;   
   text-align: center;
   color:#fff; 
