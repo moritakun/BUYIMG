@@ -55,7 +55,7 @@
 				</div>
 			</div>	
 		<!-- /header -->
-		<h3>xxxの写真素材　xx件</h3>
+		<h3><?php echo $_GET["big_category"]; ?>の写真素材　xx件</h3>
 		<hr>
 		<a href="" class="order_link">▼新着順</a>
 
