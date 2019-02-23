@@ -109,7 +109,7 @@ body {
 /* category */
 .category{
   width:1280px;
-  margin-left:80px;
+  margin:0 auto;
   /* デバッグ
   background-color:pink; */
 }
