@@ -22,13 +22,56 @@ body {
 	float:left;
 }
 .header_buttons{
-	margin-left:1230px;
+	text-align:right;
+	padding-right:80px;
 	padding-top:5px;
 }
+
+/*検索フォーム*/
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 400px;
+  overflow: hidden;
+  background-color:white;
+  float:left;
+  margin:15px 0 0 330px;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  width:350px;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  /* 虫眼鏡の画像 */
+  background-image:url(../img/common/search.png);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  color: #3879D9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
+  outline : none;
+}
+
 /* mypage button */
 .header_button1{
 	border-radius: 50%;
-    border: 2px solid white;
+  border: 2px solid white;
+  vertical-align: middle;
 }
 .header_button1:hover{
 	border-radius: 50%;
@@ -38,7 +81,8 @@ body {
 .header_button2{
 	margin-left:5px;
 	border-radius: 50%;
-    border: 2px solid white;
+  border: 2px solid white;
+  vertical-align: middle;
 }
 .header_button2:hover{
 	margin-left:5px;
