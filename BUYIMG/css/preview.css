@@ -28,10 +28,52 @@ body {
 	padding-right:80px;
 	padding-top:5px;
 }
+
+/*検索フォーム*/
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.3em;
+  width: 400px;
+  overflow: hidden;
+  background-color:white;
+  float:left;
+  margin:15px 0 0 330px;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  width:350px;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  /* 虫眼鏡の画像 */
+  background-image:url(../img/common/search.png);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  color: #3879D9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -10px;
+  outline : none;
+}
+
 /* mypage button */
 .header_button1{
 	border-radius: 50%;
-    border: 2px solid white;
+  border: 2px solid white;
+  vertical-align: middle;
 }
 .header_button1:hover{
 	border-radius: 50%;
@@ -41,7 +83,8 @@ body {
 .header_button2{
 	margin-left:5px;
 	border-radius: 50%;
-    border: 2px solid white;
+  border: 2px solid white;
+  vertical-align: middle;
 }
 .header_button2:hover{
 	margin-left:5px;
@@ -51,12 +94,17 @@ body {
 /* hedder ここまで */
 
 h3{
-	margin:120px 0 20px 70px;
+	margin:120px 0 20px 50px;
+}
+.order_link{
+	margin:10px 0 0 50px;
 }
 /*商品表示部分*/
 .grid{
-	margin-left:60px;
-	width:1400px;
+	margin:60px auto 0 auto;
+	width:1300px;
+/*	デバッグ
+	background-color:pink;*/
 }
 .grid-item{
 	/* デバッグ
@@ -71,22 +119,11 @@ h3{
 	vertical-align: middle;
  	color: #737373;
 }
-/*
-.item-1{
-	height: 200px;
-}
 
-.item-2{
-	height: 300px;
-}
-.item-3{
-	height: 400px;
-}
-*/
 /* footer */
 #footer
 {
-	margin-top:300px;	/* 各自変更すること */
+	margin-top:100px;	/* 各自変更すること */
 	background-color:#414348;   
 	text-align: center;
 	color:#fff; 
