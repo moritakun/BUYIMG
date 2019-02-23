@@ -77,7 +77,7 @@
 				</div>
 			</div>
 		<!-- /header -->
-		<h3><?php echo $_GET["big_category"]; ?>の写真素材　xx件</h3>
+		<h3><?php if(isset($_GET["big_category"])){echo $_GET["big_category"];}else{print $_POST["seaech_word"];} ?>の写真素材　xx件</h3>
 
 		<hr>
 		<a href="" class="order_link">▼新着順</a>
