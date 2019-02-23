@@ -9,6 +9,7 @@
       $con=mysqli_connect("localhost","root","")or die("失敗");
       mysqli_set_charset($con,"utf8");
       mysqli_select_db($con,"rain_site");
+
       if(isset($_POST["seaech_word"]))
       {
         //とりあえずIDと画像だけを取得して、preview_detailのページでその他の情報を取得させる

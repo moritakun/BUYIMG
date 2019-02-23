@@ -60,7 +60,8 @@ session_start();
         ?>
         ><br>
 		</form>
-
+    
+    <h2>関連写真</h2>
     <?php
     $cnt=0;
     foreach ($list2 as $row2) {
