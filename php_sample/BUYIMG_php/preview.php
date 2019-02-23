@@ -4,7 +4,11 @@
 -->
 
 <?php
+<<<<<<< HEAD:php_sample/BUYIMG_php/preview.php
 	$con=mysqli_connect("localhost","root","root")or die("失敗");
+=======
+	$con=mysqli_connect("localhost","root","")or die("失敗");
+>>>>>>> 4a8ff4adad26798fb6294dec8228ff00f04a7b3b:php_sample/BUYIMG_php/preview.php
 	mysqli_set_charset($con,"utf8");
 	mysqli_select_db($con,"rain_site");
 	if(isset($_POST["seaech_word"]))
@@ -77,11 +81,16 @@
 				</div>
 			</div>
 		<!-- /header -->
+<<<<<<< HEAD:php_sample/BUYIMG_php/preview.php
 		<h3><?php echo $_GET["big_category"]; ?>の写真素材　xx件</h3>
+=======
+		<h3><?php if(isset($_GET["big_category"])){echo $_GET["big_category"];}else{print $_POST["seaech_word"];} ?>の写真素材　xx件</h3>
+>>>>>>> 4a8ff4adad26798fb6294dec8228ff00f04a7b3b:php_sample/BUYIMG_php/preview.php
 
 		<hr>
 		<a href="" class="order_link">▼新着順</a>
 
+<<<<<<< HEAD:php_sample/BUYIMG_php/preview.php
 		<div class="grid">
 		<?php foreach ($list as $row) {?>
 			<a href="./preview_detail.php?id=<?php echo $row["product_id"]?>" class="grid-item">
@@ -95,6 +104,16 @@
 -->
 			<?php } ?>
 		</div>
+=======
+
+		<?php foreach ($list as $row) {?>
+			<form method="post" action="./preview_detail.php">
+				<input type="hidden" name="product_id" value="<?php echo $row["product_id"];?>">
+				<input type="image" src="<?php print $row["product_path"]; ?>" alt="商品" width=200px height="200px">
+			</form>
+			<?php } ?>
+
+>>>>>>> 4a8ff4adad26798fb6294dec8228ff00f04a7b3b:php_sample/BUYIMG_php/preview.php
 
 		<!--
 		<div class="grid">

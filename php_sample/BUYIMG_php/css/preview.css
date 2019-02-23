@@ -101,6 +101,7 @@ h3{
 }
 /*商品表示部分*/
 .grid{
+<<<<<<< HEAD
 	margin:50px auto 0 auto;
 	width:1310px;
 	/* デバッグ
@@ -118,6 +119,22 @@ h3{
 
 .grid-item img{
 	width:320px;
+=======
+	margin:60px auto 0 auto;
+	width:1300px;
+/*	デバッグ
+	background-color:pink;*/
+}
+.grid-item{
+	/* デバッグ
+	background: #efefef;*/
+	width:200px;
+	float: left;
+	margin: 10px;
+ 	display: table;
+}
+.grid-item span{
+>>>>>>> 4a8ff4adad26798fb6294dec8228ff00f04a7b3b
  	display: table-cell;
 	vertical-align: middle;
  	color: #737373;
@@ -126,7 +143,11 @@ h3{
 /* footer */
 #footer
 {
+<<<<<<< HEAD
 	margin-top:200px;	/* 各自変更すること */
+=======
+	margin-top:100px;	/* 各自変更すること */
+>>>>>>> 4a8ff4adad26798fb6294dec8228ff00f04a7b3b
 	background-color:#414348;   
 	text-align: center;
 	color:#fff; 
