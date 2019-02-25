@@ -4,7 +4,7 @@
 -->
 
 <?php
-	$con=mysqli_connect("localhost","root","")or die("失敗");
+	$con=mysqli_connect("localhost","root","root")or die("失敗");
 	mysqli_set_charset($con,"utf8");
 	mysqli_select_db($con,"rain_site");
 	if(isset($_POST["seaech_word"]))
@@ -82,17 +82,18 @@
 		<hr>
 		<a href="" class="order_link">▼新着順</a>
 
-
+		<div class="grid">
 		<?php foreach ($list as $row) {?>
-			<form method="post" action="./preview_detail.php">
+			<a href="./preview_detail.php?product_id=<?php echo $row["product_id"]; ?>" class="grid-item">
+				<img src="<?php echo $row["product_path"]; ?>">
+			</a>
+<!--			<form method="post" action="./preview_detail.php">
 				<input type="hidden" name="product_id" value="<?php echo $row["product_id"];?>">
 				<input type="image" src="<?php print $row["product_path"]; ?>" alt="商品" width=200px height="200px">
 			</form>
-			<?php } ?>
-
-
-		<!--
-		<div class="grid">
+-->
+		<?php } ?>
+<!--
 			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
 			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
 			<div class="grid-item item-3" class="item"><span><img src="img/preview/3.jpg"></span></div>
@@ -105,9 +106,9 @@
 			<div class="grid-item item-1" class="item"><span><img src="img/preview/1.jpg"></span></div>
 			<div class="grid-item item-2" class="item"><span><img src="img/preview/2.jpg"></span></div>
 			<div class="grid-item item-3" class="item"><span><img src="img/preview/3.jpg"></span></div>
-
+-->
 		</div>
-		-->
+
 		<!-- footer -->
          <div id="footer">
                   Copyright © RAIN. All Rights Reserved.
