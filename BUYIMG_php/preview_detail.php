@@ -2,16 +2,16 @@
 session_start();
 //キーワードがあればそれを「$keyword」にいれる
 
- if(isset($_POST["product_id"])){
+ if(isset($_GET["product_id"])){
   //「preview」からこのページにきたとき
-  $keyword = $_POST["product_id"];
+  $keyword = $_GET["product_id"];
  }elseif(isset($_SESSION["product_id_2"])){
   //「add_cart」からこのページに戻ってきたとき
   $keyword = $_SESSION["product_id_2"];
  }
 
 //DB操作
-  $con=mysqli_connect("localhost","root","")or die("失敗");
+  $con=mysqli_connect("localhost","root","root")or die("失敗");
   mysqli_set_charset($con,"utf8");
   mysqli_select_db($con,"rain_site");
 
@@ -87,7 +87,7 @@ session_start();
 								*********************<br/></p>
 								<!--<button type="button" name="cardplus" class="btn btn-info"  onclick="location.href='./cart.php'">カードに追加</button>-->
 								<form method="post" action="./add_cart.php">
-									<input type="hidden" name="product_id" value="<?php print $_POST["product_id"]; ?>">
+									<input type="hidden" name="product_id" value="<?php print $_GET["product_id"]; ?>">
 									<input type="submit" value=<?php if(isset($_SESSION["cart"][$row['product_id']]))
 									{
 										print "カートにあります";
