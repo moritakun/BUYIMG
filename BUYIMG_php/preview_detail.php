@@ -111,25 +111,27 @@ session_start();
 			<div class="clearfix"></div><br/>
 			<section>
 				<div><button type="button" class="btn btn-link">関連写真</button></div>
-				<?php
-				$cnt=0;
-				foreach ($list2 as $row2) {
-						if($cnt>3)
-						{
-							break;
-						}
-						if($row2['product_id']==$row['product_id'])
-						{
-							continue;
-						}
-					?>
-					<form method="get" action="./preview_detail.php">
-						<input type="hidden" name="product_id" value="<?php echo $row2["product_id"];?>">
-						<input type="image" src="<?php print $row2["product_path"]; ?>" alt="商品" width=200px height="200px">
-					</form>
-					<?php
-					$cnt++;
-				} ?>
+        <div class="img-flex-4">
+    				<?php
+    				$cnt=0;
+    				foreach ($list2 as $row2) {
+    						if($cnt>3)
+    						{
+    							break;
+    						}
+    						if($row2['product_id']==$row['product_id'])
+    						{
+    							continue;
+    						}
+    					?>
+    					<form method="get" action="./preview_detail.php">
+    						<input type="hidden" name="product_id" value="<?php echo $row2["product_id"];?>">
+    						<input type="image" src="<?php print $row2["product_path"]; ?>" alt="商品" class="imgwidth">
+    					</form>
+    					<?php
+    					$cnt++;
+    				} ?>
+        </div>
 				<!--
 				<div class="img-flex-4">
 					<a href="#"><img src="./images/event.jpg" alt="event"></a>
