@@ -54,7 +54,6 @@ body {
 #wrap{
 	margin:0 auto;
 	width:1280px;
-	background-color:pink;
 }
 h2{
 	margin:100px 0 30px 0;
@@ -66,8 +65,9 @@ hr{
 /*left*/
 #left_contents{
 	width:400px;
-	background-color:blue;
-	float:left;
+/*	background-color:blue;*/
+	margin:0 auto;
+/*	float:left; */
 }
 .contents_block{
 	width:400px;
@@ -82,19 +82,53 @@ hr{
 	text-align:center;
 	padding-top:40px;
 }
+#middle_line{
+	width:960px;
+	margin:auto;
+}
 /* right */
 #right_contents{
-	width:600px;
-	background-color:orange;
+	width:450px;
+	height:50px;
+	margin:20px auto 0 auto;
 }
-/* footer */
+#payment{
+	width:200px;
+	height:50px;
+	float:left;
+}
+#sum{
+	font-weight:bold;
+	margin-left:300px;
+	padding-top:10px;
+}
 
+/* button */
+#buttons{
+	text-align:center;
+	margin:50px 0 100px 0;
+}
+#change_link{
+	text-decoration:none;
+	padding:15px 45px 15px 45px;
+	border-radius:25px 25px 25px 25px;
+	background-color:#D7E8EC;
+	margin-right:30px;
+}
+#buy_link{
+	text-decoration:none;
+	padding:15px 45px 15px 45px;
+	border-radius:25px 25px 25px 25px;
+	background-color:#D7E8EC;
+}
+
+
+/* footer */
 #footer
 {
 	/* 一番下に固定 */
-	position: fixed;
     bottom: 0;
-	margin-top:500px;
+	margin-top:50px;
 	background-color:#414348;   
 	text-align: center;
 	color:#fff; 

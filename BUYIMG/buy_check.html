@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.oymentrg/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -36,13 +36,22 @@
 						<p>sample03<br>価格:500円</p>
 				</div>
 			</div>
+			<hr id="middle_line">
 
 			<!-- 支払い情報部分 -->
 			<div id="right_contents">
-				<p>合計金額:1500円</p>
-				<p>支払い方法</p>
-				<p>xxxx-xxxx-1234</p>
+				<div id="payment">
+					<p>支払い方法<br>xxxx-xxxx-1234</p>					
+				</div>
+				<p id="sum">合計金額:1500円</p>
 			</div>
+
+			<!-- button -->
+			<div id="buttons">
+				<a href="./cash.php" id="change_link">変更</a>
+				<a href="./buy_finish.html" id="buy_link">購入</a>		
+			</div>
+			
 		</div>
 		<!-- footer -->
         <div id="footer">
