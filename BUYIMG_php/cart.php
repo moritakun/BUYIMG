@@ -50,7 +50,7 @@ session_start();
 						?>
 					<tr>
 						<td>
-							<img src="<?php print $row["product_path"]; ?>" alt="ワイン"/>
+							<img src="<?php print $row["product_path"]; ?>" alt="ワイン" class="figure-img"/>
 						</td>
 						<td>
 							<label>画像名:</label><?php print $row["product_name"]; ?><br/>
@@ -59,7 +59,7 @@ session_start();
 						<td>
 							<form method="post" action="./remove_cart.php">
 								<input type="hidden" name="product_id" value="<?php print $row["product_id"]; ?>">
-								<input type="submit" value="カートから削除"><br><br>
+								<input type="submit" value="削除" class="btn btn-secondary btn-lg btn-block"><br><br>
 							</form>
 							<!--<button type="button" name="delete" class="btn btn-secondary btn-lg btn-block">削除</button>-->
 						</td>
