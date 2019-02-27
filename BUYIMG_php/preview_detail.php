@@ -65,11 +65,13 @@ session_start();
 		<div class="container">
 			<button type="button" class="btn btn-link">back</button>
 			<hr/>
+<!--
 			<div>
 				<button type="button" class="btn btn-default">生活</button>
 				<button type="button" class="btn btn-default">飲み物</button>
 				<button type="button" class="btn btn-default">店</button>
 			</div>
+-->
 			<div class="clearfix"></div><br/>
 			<section>
 				<div class="media">
@@ -120,7 +122,7 @@ session_start();
 							continue;
 						}
 					?>
-					<form method="post" action="./preview_detail.php">
+					<form method="get" action="./preview_detail.php">
 						<input type="hidden" name="product_id" value="<?php echo $row2["product_id"];?>">
 						<input type="image" src="<?php print $row2["product_path"]; ?>" alt="商品" width=200px height="200px">
 					</form>
