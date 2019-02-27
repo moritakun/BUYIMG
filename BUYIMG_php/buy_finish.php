@@ -1,0 +1,90 @@
+<!--
+	【フロント】
+	・centerimgの画像切り替えアニメーション
+	・カテゴリ部分のアニメーション、リンク範囲修正
+	・検索バー修正
+	【バック】
+	・検索フォームに入力した内容を受け取る変数(id)を訂正
+	・カテゴリアイコンのリンク先
+-->
+<?php
+session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-style-type" content="text/css"/>
+
+    <title>buy_finish|BUYIMG</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="./css/buy_finish_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+  <?php
+ $_SESSION=array();
+?>
+
+    <!-- header -->
+        <div class="header">
+            <a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+            <!-- 検索フォーム -->
+            <form method="post" action="./preview.php" class="search_container">
+                 <input type="text" size="25" placeholder="キーワード検索" name="seaech_word">
+                <input type="submit" value="">
+            </form>
+             <div class="header_buttons">
+                <a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+                <a href="./cart.php"><img src="./img/common/header_button2.png" class="header_button2"></a>
+            </div>
+        </div>
+        <!-- /header -->
+<div class="center">
+    <h1 class="buy_finish_sentenced1">ご購入ありがとうございました。</h1><br/>
+    <h2 class="buy_finish_sentenced2">下記リンクから購入履歴の確認、ダウンロードをすることができます。</h2>
+</div>
+
+<div class="center_button">
+    <a href=""><button class="buy_button">購入履歴</button></a>
+</div>
+
+
+<!-- category -->
+<!--<div class="category">-->
+    <!--<h2 class="category_title">category</h2>-->
+    <hr class="category_line">
+
+    <!--<div class="category_icon">-->
+        <!--&lt;!&ndash;<div class="category_1">&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/business.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/event.png"></a>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="category_2">&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/person.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/nature.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/life.png"></a>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="pickup_photo">
+    <h2 class="pickup_photo_character">pickup photo</h2>
+    <div class="photos">
+        <img src="./db_img/people01.jpg" height="150" width="300"/>
+        <img src="./db_img/people02.jpg" height="150" width="300"/>
+        <img src="./db_img/people03.jpg" height="150" width="300"/>
+        <img src="./db_img/people04.jpg" height="150" width="300"/>
+    </div>
+</div>
+<!-- footer -->
+<div id="footer-fixed">
+    <div id="footer-content">
+        Copyright © RAIN. All Rights Reserved.
+    </div>
+</div>
+<!-- /footer -->
+</body>
+</html>

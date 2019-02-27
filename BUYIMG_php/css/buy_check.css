@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	height:100%;
+	width:100%;
+	font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",sans-serif;
+}
+
+/* header */
+.header{
+	background-color:#414348;
+	width:100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+.header_logo{
+	margin-left:100px;
+	padding:5px 0px;
+	float:left;
+}
+.header_buttons{
+	text-align:right;
+	padding-right:80px;
+	padding-top:5px;
+}
+/* mypage button */
+.header_button1{
+	border-radius: 50%;
+    border: 2px solid white;
+   vertical-align: middle;
+}
+.header_button1:hover{
+	border-radius: 50%;
+    border: 2px solid #a2d8e4;
+}
+/* cart button */
+.header_button2{
+	margin-left:5px;
+	border-radius: 50%;
+    border: 2px solid white;
+    vertical-align: middle;
+}
+.header_button2:hover{
+	margin-left:5px;
+	border-radius: 50%;
+    border: 2px solid #a2d8e4;
+}
+/* hedder ここまで */
+#wrap{
+	margin:0 auto;
+	width:1280px;
+}
+h2{
+	margin:100px 0 30px 0;
+	text-align:center;
+}
+hr{
+	margin-bottom:50px;
+}
+/*left*/
+#left_contents{
+	width:400px;
+/*	background-color:blue;*/
+	margin:0 auto;
+/*	float:left; */
+}
+.contents_block{
+	width:400px;
+	height:150px;
+
+}
+.buy_img{
+	width:200px;
+	float:left;
+}
+.contents_block p{
+	text-align:center;
+	padding-top:40px;
+}
+#middle_line{
+	width:960px;
+	margin:auto;
+}
+/* right */
+#right_contents{
+	width:450px;
+	height:50px;
+	margin:20px auto 0 auto;
+}
+#payment{
+	width:200px;
+	height:50px;
+	float:left;
+}
+#sum{
+	font-weight:bold;
+	margin-left:300px;
+	padding-top:10px;
+}
+
+/* button */
+#buttons{
+	text-align:center;
+	margin:50px 0 100px 0;
+}
+#change_link{
+	text-decoration:none;
+	padding:15px 45px 15px 45px;
+	border-radius:25px 25px 25px 25px;
+	background-color:#D7E8EC;
+	margin-right:30px;
+}
+#buy_link{
+	text-decoration:none;
+	padding:15px 45px 15px 45px;
+	border-radius:25px 25px 25px 25px;
+	background-color:#D7E8EC;
+}
+
+
+/* footer */
+#footer
+{
+	/* 一番下に固定 */
+    bottom: 0;
+	margin-top:50px;
+	background-color:#414348;   
+	text-align: center;
+	color:#fff; 
+	padding:10px 0 20px;      
+	height:60px;             
+	width:100%;               
+}
+/* footer ここまで */
