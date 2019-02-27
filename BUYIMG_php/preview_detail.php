@@ -142,7 +142,7 @@ session_start();
 			-->
 			</section>
 
-		</div>
+		</div><br/><br/>
 		<!--main end-->
 
 
