@@ -236,6 +236,12 @@ caption {
     caption-side: bottom
 }
 
+.figure-img {
+    width:300px;
+    margin-bottom: .5rem;
+    line-height: 1
+}
+
 th {
     text-align: inherit
 }

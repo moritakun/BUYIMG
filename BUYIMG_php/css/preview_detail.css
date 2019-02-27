@@ -117,6 +117,12 @@ body {
 	justify-content: space-between;
 }
 .img-flex-4 img { width: 100%;  }
+.imgwidth{
+	width:200px;
+}
+.imginfo{
+	width:300px;
+}
 /*preview_detail end*/
 
 /* footer */

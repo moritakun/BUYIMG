@@ -76,7 +76,7 @@ session_start();
 			<section>
 				<div class="media">
 					<div class="media_imginfo">
-						<img src="<?php echo $row['product_path'] ; ?>" alt="life">
+						<img src="<?php echo $row['product_path'] ; ?>" alt="life" class="imginfo">
 					</div>
 					<div class-"media_text">
 							<h3 class="media_header">タイトル:<?php echo $row['product_name'] ; ?></h3>
@@ -90,7 +90,7 @@ session_start();
 								<!--<button type="button" name="cardplus" class="btn btn-info"  onclick="location.href='./cart.php'">カードに追加</button>-->
 								<form method="post" action="./add_cart.php">
 									<input type="hidden" name="product_id" value="<?php print $_GET["product_id"]; ?>">
-									<input type="submit" value=<?php if(isset($_SESSION["cart"][$row['product_id']]))
+									<input type="submit" class="btn btn-info"  value=<?php if(isset($_SESSION["cart"][$row['product_id']]))
 									{
 										print "カートにあります";
 									}else{
@@ -101,15 +101,17 @@ session_start();
 											print"style=pointer-events:none;";
 										}
 										?>
-										><br>
+										>
+                    <button type="button" name="favorite" class="btn btn-info">お気に入りに追加</button>
 								</form>
-								<button type="button" name="favorite" class="btn btn-info">お気に入りに追加</button>
+
 					</div>
 				</div>
 			</section>
 			<div class="clearfix"></div><br/>
 			<section>
 				<div><button type="button" class="btn btn-link">関連写真</button></div>
+<<<<<<< HEAD
 				<?php
 				$cnt=0;
 				foreach ($list2 as $row2) {
@@ -130,6 +132,29 @@ session_start();
 					$cnt++;
 				} ?>
 
+=======
+        <div class="img-flex-4">
+    				<?php
+    				$cnt=0;
+    				foreach ($list2 as $row2) {
+    						if($cnt>3)
+    						{
+    							break;
+    						}
+    						if($row2['product_id']==$row['product_id'])
+    						{
+    							continue;
+    						}
+    					?>
+    					<form method="post" action="./preview_detail.php">
+    						<input type="hidden" name="product_id" value="<?php echo $row2["product_id"];?>">
+    						<input type="image" src="<?php print $row2["product_path"]; ?>" alt="商品" class="imgwidth">
+    					</form>
+    					<?php
+    					$cnt++;
+    				} ?>
+        </div>
+>>>>>>> 1307e917dc5e12d5759c88167ed4736dfeedc477
 				<!--
 				<div class="img-flex-4">
 					<a href="#"><img src="./images/event.jpg" alt="event"></a>
