@@ -1,7 +1,6 @@
 <?php
 session_start();
 //キーワードがあればそれを「$keyword」にいれる
-
  if(isset($_GET["product_id"])){
   //「preview」からこのページにきたとき
   $keyword = $_GET["product_id"];
@@ -27,8 +26,6 @@ session_start();
   while ($row2 = mysqli_fetch_assoc($result2)) {
     $list2[] = $row2;
   }
-
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

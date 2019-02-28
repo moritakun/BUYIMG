@@ -227,10 +227,16 @@ body {
 	/*margin-right:40px;*/
 /*}*/
 
-
+.pickup_img{
+  width:300px;
+  height:;
+  margin-right:10px;
+  height:auto;
+  float:left;
+}
 /* footer */
 
-div#footer-content
+#footer
 {
 	margin-top:50px;
 	background-color:#414348;   

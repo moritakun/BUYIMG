@@ -1,11 +1,6 @@
 <!--
-	【フロント】
-	・centerimgの画像切り替えアニメーション
-	・カテゴリ部分のアニメーション、リンク範囲修正
-	・検索バー修正
-	【バック】
-	・検索フォームに入力した内容を受け取る変数(id)を訂正
-	・カテゴリアイコンのリンク先
+    ！未完成！
+    DB完成後、pickup_photo部分修正
 -->
 <?php
 session_start();
@@ -26,7 +21,7 @@ session_start();
 <body>
   <?php
  $_SESSION=array();
-?>
+    ?>
 
     <!-- header -->
         <div class="header">
@@ -57,33 +52,28 @@ session_start();
     <!--<h2 class="category_title">category</h2>-->
     <hr class="category_line">
 
-    <!--<div class="category_icon">-->
-        <!--&lt;!&ndash;<div class="category_1">&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/business.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/event.png"></a>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="category_2">&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/person.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/nature.png" id="icon_left"></a>&ndash;&gt;&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<a href="./preview.html"><img src="./img/life.png"></a>&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-<!--</div>-->
 
 <div class="pickup_photo">
     <h2 class="pickup_photo_character">pickup photo</h2>
     <div class="photos">
-        <img src="./db_img/people01.jpg" height="150" width="300"/>
-        <img src="./db_img/people02.jpg" height="150" width="300"/>
-        <img src="./db_img/people03.jpg" height="150" width="300"/>
-        <img src="./db_img/people04.jpg" height="150" width="300"/>
+        <a href="./preview_detail.php?product_id=44">
+            <img src="./db_img/people01.jpg" class="pickup_img">            
+        </a>
+       <a href="./preview_detail.php?product_id=45">
+            <img src="./db_img/people02.jpg" class="pickup_img">            
+        </a>
+        <a href="./preview_detail.php?product_id=46">
+            <img src="./db_img/people03.jpg" class="pickup_img">            
+        </a>
+        <a href="./preview_detail.php?product_id=47">
+            <img src="./db_img/people04.jpg" class="pickup_img">            
+        </a>
+ 
     </div>
 </div>
 <!-- footer -->
-<div id="footer-fixed">
-    <div id="footer-content">
-        Copyright © RAIN. All Rights Reserved.
-    </div>
+<div id="footer">
+    Copyright © RAIN. All Rights Reserved.
 </div>
 <!-- /footer -->
 </body>
