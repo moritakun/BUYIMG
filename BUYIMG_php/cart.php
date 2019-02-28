@@ -79,7 +79,7 @@ session_start();
 								<!--決済-->
 								<div class="table table-responsive-md table-hover table-striped text-right">
 									<form method="post" action="#">
-										<label><strong>合計：<span><?php print $sum; ?></span>円<strong></label>　<button type="button" name="cash" class="btn btn-secondary btn-lg">決済</button>
+										<label><strong>合計：<span><?php print $sum; ?></span>円<strong></label>　<button type="button" name="cash" onclick="Location:./cash.html" class="btn btn-secondary btn-lg">決済</button>
 									</form>
 								</div>
 				</div>
