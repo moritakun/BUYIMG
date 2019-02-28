@@ -109,12 +109,12 @@ h3{
 .grid-item{
 	/* デバッグ
 	background: #efefef;*/
-	width:200px;
 	float: left;
 	margin: 10px;
  	display: table;
 }
-.grid-item span{
+.grid-item img{
+	width:320px;
  	display: table-cell;
 	vertical-align: middle;
  	color: #737373;

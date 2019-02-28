@@ -17,6 +17,7 @@
 		$sql=" select product_id,product_path from product_master where big_category='{$_GET["big_category"]}'";
 	}
 	$result=mysqli_query($con,$sql);
+	$num=mysqli_num_rows($result);
 	$list = array();
 	while ($row = mysqli_fetch_assoc($result)) {
 		$list[] = $row;
@@ -77,7 +78,7 @@
 				</div>
 			</div>
 		<!-- /header -->
-		<h3><?php if(isset($_GET["big_category"])){echo $_GET["big_category"];}else{print $_POST["seaech_word"];} ?>の写真素材　xx件</h3>
+		<h3><?php if(isset($_GET["big_category"])){echo $_GET["big_category"];}else{print $_POST["seaech_word"];} ?>の写真素材<?php print $num; ?>件</h3>
 
 		<hr>
 		<a href="" class="order_link">▼新着順</a>
