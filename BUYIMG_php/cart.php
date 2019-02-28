@@ -28,7 +28,6 @@ session_start();
 			</div>
 		<!-- /header -->
 
-						mysqli_select_db($con,"rain_site");
 		<!--main start-->
 		<div class="container">
 			<br/><br/><br/>
