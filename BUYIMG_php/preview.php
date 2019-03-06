@@ -81,8 +81,6 @@
 		<h3><?php if(isset($_GET["big_category"])){echo $_GET["big_category"];}else{print $_POST["seaech_word"];} ?>の写真素材<?php print $num; ?>件</h3>
 
 		<hr>
-		<a href="" class="order_link">▼新着順</a>
-
 		<div class="grid">
 		<?php foreach ($list as $row) {?>
 			<a href="./preview_detail.php?product_id=<?php echo $row["product_id"]; ?>" class="grid-item">

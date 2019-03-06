@@ -12,7 +12,7 @@ session_start();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-style-type" content="text/css"/>
 
-    <title>buy_finish|BUYIMG</title>
+    <title>購入完了|BUYIMG</title>
 
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <link href="./css/buy_finish_style.css" rel="stylesheet" type="text/css" />
@@ -56,17 +56,17 @@ session_start();
 <div class="pickup_photo">
     <h2 class="pickup_photo_character">pickup photo</h2>
     <div class="photos">
-        <a href="./preview_detail.php?product_id=44">
-            <img src="./db_img/people01.jpg" class="pickup_img">            
+        <a href="./preview_detail.php?product_id=25">
+            <img src="./db_img/business02.jpg" class="pickup_img">            
         </a>
-       <a href="./preview_detail.php?product_id=45">
-            <img src="./db_img/people02.jpg" class="pickup_img">            
+       <a href="./preview_detail.php?product_id=105">
+            <img src="./db_img/event16.jpg" class="pickup_img">            
         </a>
-        <a href="./preview_detail.php?product_id=46">
-            <img src="./db_img/people03.jpg" class="pickup_img">            
+        <a href="./preview_detail.php?product_id=78">
+            <img src="./db_img/people20.jpg" class="pickup_img">            
         </a>
-        <a href="./preview_detail.php?product_id=47">
-            <img src="./db_img/people04.jpg" class="pickup_img">            
+        <a href="./preview_detail.php?product_id=84">
+            <img src="./db_img/life11.jpg" class="pickup_img">            
         </a>
  
     </div>

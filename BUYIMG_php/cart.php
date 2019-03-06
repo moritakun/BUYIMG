@@ -93,7 +93,7 @@ session_start();
 							<br/>
 							<br/>
 							<h2>カートが空です</h2>
-							<a href="index.html">topページ戻ります</a>
+							<a href="index.html">top</a>
 						</div>
 				<?php
 					}
