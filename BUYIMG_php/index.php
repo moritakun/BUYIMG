@@ -2,6 +2,12 @@
 	・必要に応じて大カテゴリアイコン部分「value」の値を直しておいてください。
 	フロント作成者：石井
 -->
+<?php
+if(isset($_GET["error"])){
+$alert = "<script type='text/javascript'>alert('キーワードを入力してください');</script>";
+echo $alert;
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
@@ -14,9 +20,9 @@
 	<body>
 		<!-- header -->
 			<div class="header">
-				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<a href="index.php"><img src="./img/common/logo_white.png" class="header_logo"></a>
 				<div class="header_buttons">
-					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="#"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.php"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
 			</div>	
@@ -69,30 +75,6 @@
 							</a>
 
 						</div>
-<!--
-									<form method="post" action="./preview.php" class="icon i-bottom1">
-										<input type="hidden" name="big_category" value="人物">
-										<input type="image" src="./img/index2/person.jpg" alt="人物">
-										<div class="mask">
-											<div class="caption">人物</div>
-										</div>	
-									</form>
-									<form method="post" action="./preview.php" class="icon i-bottom2">
-										<input type="hidden" name="big_category" value="自然">
-										<input type="image" src="./img/index2/nature.jpg" alt="自然">
-										<div class="mask">
-											<div class="caption">自然</div>
-										</div>	
-									</form>
-									<form method="post" action="./preview.php" class="icon i-bottom3">
-										<input type="hidden" name="big_category" value="生活">
-										<input type="image" src="./img/index2/life.jpg" alt="生活">
-										<div class="mask">
-											<div class="caption">生活</div>
-										</div>	
-									</form>
-						</div>
--->
 				</div>
 
 
@@ -103,3 +85,4 @@
 		<!-- /footer -->
 	</body>
 </html>
+

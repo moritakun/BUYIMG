@@ -71,7 +71,8 @@ hr{
 }
 .contents_block{
 	width:400px;
-	height:150px;
+	height:300px;
+	background-color:pink;
 
 }
 .buy_img{

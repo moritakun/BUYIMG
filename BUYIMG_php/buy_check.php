@@ -14,9 +14,9 @@ session_start();
 	<body>
 		<!-- header -->
 			<div class="header">
-				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<a href="index.php"><img src="./img/common/logo_white.png" class="header_logo"></a>
 				<div class="header_buttons">
-					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="#"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.php"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
 			</div>
@@ -30,7 +30,7 @@ session_start();
 			<div id="left_contents">
 				<?php
 				//print_r($_SESSION["cart"]);
-				$con=mysqli_connect("localhost","root","root")or die("失敗");
+				$con=mysqli_connect("localhost","root","")or die("失敗");
 		    mysqli_set_charset($con,"utf8");
 		    mysqli_select_db($con,"rain_site");
 		    $sum = 0;

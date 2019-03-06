@@ -44,7 +44,7 @@ session_start();
 	<body>
 		<!-- header -->
 			<div class="header">
-				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<a href="index.php"><img src="./img/common/logo_white.png" class="header_logo"></a>
 				<!-- 検索フォーム -->
 				<form method="post" action="./preview.php" class="search_container">
 					<input type="text" size="25" placeholder="キーワード検索" name="seaech_word">
@@ -52,7 +52,7 @@ session_start();
 				</form>
 
 				<div class="header_buttons">
-					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="#"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.php"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
 			</div>

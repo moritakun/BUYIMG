@@ -20,9 +20,9 @@ session_start();
 	<body>
 		<!-- header -->
 			<div class="header">
-				<a href="index.html"><img src="./img/common/logo_white.png" class="header_logo"></a>
+				<a href="index.php"><img src="./img/common/logo_white.png" class="header_logo"></a>
 				<div class="header_buttons">
-					<a href="blank"><img src="./img/common/header_button1.png" class="header_button1"></a>
+					<a href="#"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.html"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
 			</div>
@@ -93,7 +93,7 @@ session_start();
 							<br/>
 							<br/>
 							<h2>カートが空です</h2>
-							<a href="index.html">top</a>
+							<a href="index.php">top</a>
 						</div>
 				<?php
 					}
