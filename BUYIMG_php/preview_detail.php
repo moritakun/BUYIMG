@@ -60,7 +60,7 @@ session_start();
 		<br/><br/><br/><br/>
 		<!--main start-->
 		<div class="container">
-			<button type="button" class="btn btn-link">back</button>
+			<button type="button" onclick="history.back()" class="btn btn-link">back</button>
 			<hr/>
 <!--
 			<div>
