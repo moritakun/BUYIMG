@@ -10,7 +10,7 @@ session_start();
  }
 
 //DB操作
-  $con=mysqli_connect("localhost","root","")or die("失敗");
+  $con=mysqli_connect("localhost","root","root")or die("失敗");
   mysqli_set_charset($con,"utf8");
   mysqli_select_db($con,"rain_site");
 

@@ -4,22 +4,21 @@
 -->
 
 <?php
-	$con=mysqli_connect("localhost","root","")or die("失敗");
+	session_start();
+
+	$con=mysqli_connect("localhost","root","root")or die("失敗");
 	mysqli_set_charset($con,"utf8");
 	mysqli_select_db($con,"rain_site");
 	if(isset($_POST["seaech_word"])){
-		if($_POST["seaech_word"]!=NULL)
-		{
+		if($_POST["seaech_word"]==NULL){
+			$_SESSION["error"] = 1;
+			header("Location:./index.php?");
+		}else{
 			//とりあえずIDと画像だけを取得して、preview_detailのページでその他の情報を取得させる
 			$sql=" select product_id,product_path from product_master where product_name like'%{$_POST["seaech_word"]}' OR product_introduction like'%{$_POST["seaech_word"]}' OR big_category like'%{$_POST["seaech_word"]}'";
 		}
-	}elseif(isset($_GET["big_category"]))
-	{
+	}elseif(isset($_GET["big_category"])){
 		$sql=" select product_id,product_path from product_master where big_category='{$_GET["big_category"]}'";
-	}
-	else{
-
-		header("Location:./index.php?error=1");
 	}
 	$result=mysqli_query($con,$sql);
 	$num=mysqli_num_rows($result);

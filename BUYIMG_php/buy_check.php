@@ -30,7 +30,7 @@ session_start();
 			<div id="left_contents">
 				<?php
 				//print_r($_SESSION["cart"]);
-				$con=mysqli_connect("localhost","root","")or die("失敗");
+				$con=mysqli_connect("localhost","root","root")or die("失敗");
 		    mysqli_set_charset($con,"utf8");
 		    mysqli_select_db($con,"rain_site");
 		    $sum = 0;

@@ -3,7 +3,10 @@
 	フロント作成者：石井
 -->
 <?php
-if(isset($_GET["error"])){
+session_start();
+
+if(isset($_SESSION["error"])){
+unset($_SESSION["error"]);
 $alert = "<script type='text/javascript'>alert('キーワードを入力してください');</script>";
 echo $alert;
 }
