@@ -18,7 +18,25 @@ echo $alert;
 		<title>TOP|BUYIMG</title>
 		<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 		<link href="./css/index.css" rel="stylesheet" type="text/css"/>
-	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="./js/jquery.bgswitcher.js"></script>
+		<script>
+			jQuery(function($) {//top背景画像の切り替え
+			    $('.center').bgSwitcher({
+			        images: ['./img/common/center_1.jpg','./img/common/center_2.jpg','./img/common/center_3.jpg',
+											'./img/common/center_4.jpg','./img/common/center_5.jpg','./img/common/center_6.jpg',
+											'./img/common/center_7.jpg','./img/common/center_8.jpg','./img/common/center_9.jpg',
+											'./img/common/center_10.jpg'], 
+							interval: 3000,
+			        loop: true,
+			        shuffle: true,
+			        effect: "fade",
+			        duration: 700,
+			        easing: "swing"
+			    });
+			});
+		</script>
+
 	</head>
 	<body>
 		<!-- header -->
@@ -28,12 +46,12 @@ echo $alert;
 					<a href="#"><img src="./img/common/header_button1.png" class="header_button1"></a>
 					<a href="./cart.php"><img src="./img/common/header_button2.png" class="header_button2"></a>
 				</div>
-			</div>	
+			</div>
 
 		<!-- /header -->
 
 		<!-- 画面中央橋の画像 -->
-			<div class="center">	
+			<div class="center">
 				<!-- 検索バー -->
 				<form method="post" action="./preview.php" class="search_container">
 					<input type="text" size="25" placeholder="キーワード検索" name="seaech_word">
@@ -51,12 +69,12 @@ echo $alert;
 						<a href="./preview.php?big_category=ビジネス" class="icon i-top1">
 							<div class="mask">
 								<div class="caption">ビジネス</div>
-							</div>									
+							</div>
 						</a>
 						<a href="./preview.php?big_category=イベント" class="icon i-top2">
 							<div class="mask">
 								<div class="caption">イベント</div>
-							</div>									
+							</div>
 						</a>
 					</div>
 
@@ -64,17 +82,17 @@ echo $alert;
 							<a href="./preview.php?big_category=人物" class="icon i-buttom1">
 								<div class="mask">
 									<div class="caption">人物</div>
-								</div>									
+								</div>
 							</a>
 							<a href="./preview.php?big_category=自然" class="icon i-buttom2">
 								<div class="mask">
 									<div class="caption">自然</div>
-								</div>									
+								</div>
 							</a>
 							<a href="./preview.php?big_category=生活" class="icon i-buttom3">
 								<div class="mask">
 									<div class="caption">生活</div>
-								</div>									
+								</div>
 							</a>
 
 						</div>
@@ -88,4 +106,3 @@ echo $alert;
 		<!-- /footer -->
 	</body>
 </html>
-

@@ -61,7 +61,11 @@ body {
   margin-left:auto;
   margin-right: auto;
   background-image:url("../img/common/center_1.jpg");
-  position:relative;
+  background-position:center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top:80px;
 }
 
@@ -74,16 +78,16 @@ body {
   border: 1px solid #999;
   padding: 3px 10px;
   border-radius: 20px;
-  height: 2.3em;
-  width: 400px;
+  height: 3.3em;
+  width: 500px;
   overflow: hidden;
   background-color:white;
   margin:200px auto 0px auto;
 }
 .search_container input[type="text"]{
   border: none;
-  height: 2.0em;
-  width:350px;
+  height: 3.0em;
+  width:450px;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -91,7 +95,7 @@ body {
 .search_container input[type="submit"]{
   cursor: pointer;
   font-family: FontAwesome;
-  font-size: 1.3em;
+  font-size: 1.8em;
   border: none;
   /* 虫眼鏡の画像 */
   background-image:url(../img/common/search.png);
@@ -109,7 +113,7 @@ body {
 /* category */
 .category{
   width:1280px;
-  margin-left:80px;
+  margin:0 auto;
   /* デバッグ
   background-color:pink; */
 }
@@ -192,11 +196,11 @@ body {
 #footer
 {
   margin-top:350px;
-  background-color:#414348;   
+  background-color:#414348;
   text-align: center;
-  color:#fff; 
-  padding:10px 0 20px;      
-  height:60px;             
-  width:100%;               
+  color:#fff;
+  padding:10px 0 20px;
+  height:60px;
+  width:100%;
 }
 /* footer ここまで */
