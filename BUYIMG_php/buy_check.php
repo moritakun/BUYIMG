@@ -30,7 +30,7 @@ session_start();
 			<div id="left_contents">
 				<?php
 				//print_r($_SESSION["cart"]);
-				$con=mysqli_connect("localhost","root","root")or die("失敗");
+				$con=mysqli_connect("localhost","root","")or die("失敗");
 		    mysqli_set_charset($con,"utf8");
 		    mysqli_select_db($con,"rain_site");
 		    $sum = 0;
@@ -69,7 +69,7 @@ session_start();
 			<!-- 支払い情報部分 -->
 			<div id="right_contents">
 				<div id="payment">
-					<p>支払い方法<br>xxxx-xxxx-1234</p>
+					<p>支払い方法<br>クレジットカード</p>
 				</div>
 				<p id="sum">合計金額:<?php print $sum; ?>円</p>
 			</div>
