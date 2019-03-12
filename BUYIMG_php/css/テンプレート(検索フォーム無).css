@@ -68,3 +68,18 @@ body {
 	width:100%;               
 }
 /* footer ここまで */
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+ 
+body {
+  margin-bottom: 5em;
+}
+ 
+#footer {
+  bottom: 0;
+  height: 5em;
+  position: absolute;
+}

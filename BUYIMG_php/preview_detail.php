@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 //キーワードがあればそれを「$keyword」にいれる
  if(isset($_GET["product_id"])){

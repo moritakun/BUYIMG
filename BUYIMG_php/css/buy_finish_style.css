@@ -191,41 +191,12 @@ body {
     background-repeat: no-repeat;
 }
 
-/* category */
-/*.category{*/
-	/*!*width:1280px;*!*/
-	/*!*margin-left:80px;*!*/
-	/*!* デバッグ*/
-	/*background-color:pink; *!*/
-/*}*/
 
 .category_line{
 	width: 1280px;
 	margin-left:80px;
 	/*text-align:center;*/
 }
-/*.category_title{*/
-	/*text-align:center;*/
-	/*font-family: 'Charmonman', cursive;*/
-	/*margin-top:30px;*/
-	/*margin-bottom:30px;*/
-/*}*/
-
-/* category_icons */
-/*.category_icon{*/
-	/*!* デバッグ*/
-	/*background-color:blue; *!*/
-	/*text-align:center;*/
-/*}*/
-/*.category_1{*/
-	/*margin-top:90px;*/
-/*}*/
-/*.category_2{*/
-	/*margin-top:30px;*/
-/*}*/
-/*#icon_left{*/
-	/*margin-right:40px;*/
-/*}*/
 
 .pickup_img{
   width:300px;
@@ -238,14 +209,13 @@ body {
 
 #footer
 {
-	position: fixed;
-bottom: 0;
+	bottom:0;
 	margin-top:50px;
-	background-color:#414348;
+	background-color:#414348;   
 	text-align: center;
-	color:#fff;
-	padding:10px 0 20px;
-	height:60px;
-	width:100%;
+	color:#fff; 
+	padding:10px 0 20px;      
+	height:60px;             
+	width:100%;               
 }
 /* footer ここまで */

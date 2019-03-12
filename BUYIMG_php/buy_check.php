@@ -47,7 +47,7 @@ session_start();
 				<div class="contents_block">
 					<img src="<?php print $row["product_path"]; ?>" class="buy_img">
 						<p><?php print $row["product_name"]; ?><br>価格:<?php print $row["price"]; ?>円</p>
-				</div><br>
+				</div>
 				<!-- <div class="contents_block">
 					<img src="./img/buy_check/2.jpg" class="buy_img">
 						<p>sample02<br>価格:500円</p>
@@ -62,7 +62,6 @@ session_start();
 					next($_SESSION["cart"]);
 				}
 				?>
-
 			</div>
 			<hr id="middle_line">
 
@@ -81,10 +80,13 @@ session_start();
 			</div>
 
 		</div>
+		<br/>
+		<br/>
+		<br/>
 		<!-- footer -->
         <div id="footer">
-            Copyright © RAIN. All Rights Reserved.
-	    </div>
+            Copyright c RAIN. All Rights Reserved.
+	    	</div>
 		<!-- /footer -->
 	</body>
 </html>

@@ -16,6 +16,7 @@ session_start();
 
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <link href="./css/buy_finish_style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/テンプレート(検索フォーム有).css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -57,18 +58,18 @@ session_start();
     <h2 class="pickup_photo_character">pickup photo</h2>
     <div class="photos">
         <a href="./preview_detail.php?product_id=25">
-            <img src="./db_img/business02.jpg" class="pickup_img">            
+            <img src="./db_img/business02.jpg" class="pickup_img">
         </a>
        <a href="./preview_detail.php?product_id=105">
-            <img src="./db_img/event16.jpg" class="pickup_img">            
+            <img src="./db_img/event16.jpg" class="pickup_img">
         </a>
         <a href="./preview_detail.php?product_id=78">
-            <img src="./db_img/people20.jpg" class="pickup_img">            
+            <img src="./db_img/people20.jpg" class="pickup_img">
         </a>
         <a href="./preview_detail.php?product_id=84">
-            <img src="./db_img/life11.jpg" class="pickup_img">            
+            <img src="./db_img/life11.jpg" class="pickup_img">
         </a>
- 
+
     </div>
 </div>
 <!-- footer -->
